@@ -502,5 +502,6 @@ static inline void cpufreq_task_stats_init(struct task_struct *p) {}
 static inline void cpufreq_task_stats_exit(struct task_struct *p) {}
 static inline void cpufreq_task_stats_remove_uids(uid_t uid_start,
 	uid_t uid_end) {}
+int single_uid_time_in_state_open(struct inode *inode, struct file *file);
 #endif
 #endif /* _LINUX_CPUFREQ_H */
