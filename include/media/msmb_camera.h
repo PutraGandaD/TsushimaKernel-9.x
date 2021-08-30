@@ -38,6 +38,9 @@
 
 #define MSM_CAM_V4L2_IOCTL_NOTIFY_DEBUG32 \
 	_IOW('V', BASE_VIDIOC_PRIVATE + 34, struct v4l2_event32)
+	
+#define MSM_CAM_V4L2_IOCTL_DAEMON_DISABLED \
+	_IOW('V', BASE_VIDIOC_PRIVATE + 35, struct msm_v4l2_event_data)
 
 #endif
 

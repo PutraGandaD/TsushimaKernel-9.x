@@ -40,6 +40,7 @@ struct camera_v4l2_private {
 	unsigned int stream_id;
 	unsigned int is_vb2_valid; /*0 if no vb2 buffers on stream, else 1*/
 	struct vb2_queue vb2_q;
+	bool stream_created;
 	struct mutex lock;
 };
 
